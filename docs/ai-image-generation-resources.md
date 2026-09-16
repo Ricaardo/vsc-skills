@@ -15,6 +15,7 @@
 - 想让 Agent 为不同模型改写 Prompt：[`prompt-master`](https://github.com/nidhinjs/prompt-master)
 - 想做系列图片并进行视觉质检：[`paper-signal`](https://github.com/jiahuiqu17/paper-signal)
 - 想从带示例图的社区库检索 Prompt：[`ai-image-prompts-skill`](https://github.com/YouMind-OpenLab/ai-image-prompts-skill)
+- 想生成多格漫画、连续分镜和故事板：[`story-picture`](https://github.com/songxiaopeng529/story-picture)
 
 ## 第一梯队：建议优先保留
 
@@ -128,6 +129,19 @@
 面向多个图像模型的 Prompt 推荐 Skill，依赖带示例图的社区图库。它适合找灵感和风格案例，但“支持所有模型”应理解为 Prompt 可迁移，而不是每条 Prompt 在每个平台都能得到相同结果；建议作为检索型补充，而不是质量保证层。
 
 提示：很多 GPT Image 2.5 Prompt 库是在 2.5 发布前收集的，应当把它们当作可改写的案例，而不是保证能复现的官方模板。
+
+### 10. Story Picture：多格漫画与故事板
+
+仓库：<https://github.com/songxiaopeng529/story-picture>
+
+这是本轮新增的唯一推荐项，专门用于多格漫画、连续场景和故事板，不是单张 Prompt 合集。它将工作流拆成：
+
+- 先明确故事主题、动作和视觉隐喻
+- 选择统一的视觉风格
+- 固定角色身份、服装、色板和画面语言
+- 生成多格画面并检查连续性
+
+仓库内置 10 套风格，并为每种风格提供参考图、Style DNA、Prompt 模板、质量规则和排除项；同时采用宿主 Agent 的生图能力，不绑定某一家模型。适合个人做漫画、连环图、短故事、文章配图和分镜草稿。需要注意：它更偏插画/叙事视觉，不是 Midjourney 参数教程，也不能替代模型本身的角色一致性能力。
 
 ## 推荐安装和学习顺序
 

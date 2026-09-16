@@ -12,6 +12,9 @@
 - 想做分镜、系列视觉和美术指导：[`Omni-Art-Skills`](https://github.com/gracetey-zhang/Omni-Art-Skills)
 - 想研究 Midjourney 的参考图、风格和迭代：[`midjourney-cc-skill`](https://github.com/justinperea/midjourney-cc-skill)
 - 想快速复制 Midjourney 示例和参数：[`awesome-midjourney-v7-example-prompts`](https://github.com/Pixmind-io/awesome-midjourney-v7-example-prompts)
+- 想让 Agent 为不同模型改写 Prompt：[`prompt-master`](https://github.com/nidhinjs/prompt-master)
+- 想做系列图片并进行视觉质检：[`paper-signal`](https://github.com/jiahuiqu17/paper-signal)
+- 想从带示例图的社区库检索 Prompt：[`ai-image-prompts-skill`](https://github.com/YouMind-OpenLab/ai-image-prompts-skill)
 
 ## 第一梯队：建议优先保留
 
@@ -103,6 +106,26 @@
 - [`awesome-gpt-image-2-5-prompts`](https://github.com/youart-open-source/awesome-gpt-image-2-5-prompts)：150 个分类 Prompt，覆盖海报、产品、人像、UI、信息图和编辑任务。
 - [`awesome-gpt-image`](https://github.com/ZeroLu/awesome-gpt-image)：GPT Image 2/2.5 提示词和案例合集。
 - [`ai-visual-prompt-cookbook`](https://github.com/pcedison/ai-visual-prompt-cookbook)：用 JSON 组织可复用的视觉风格模板。
+
+## 近期候选：通用 Prompt 与视觉生产
+
+### 7. Prompt Master
+
+仓库：<https://github.com/nidhinjs/prompt-master>
+
+通用 Prompt Skill，能够根据目标工具选择不同的提示词结构，覆盖 ChatGPT、Midjourney、Flux、Stable Diffusion 和 ComfyUI 等。它更适合做“模型适配层”，不是独立的生图模型或风格生成器。仓库采用 MIT 许可证，社区规模较大。
+
+### 8. Paper Signal
+
+仓库：<https://github.com/jiahuiqu17/paper-signal>
+
+面向视觉创作的 Agent Skill 集合，提供美术指导、系列图片生产和结果审查。它适合把参考图、风格系统、主体保持和生成后 QA 组织成一个可复用流程；仓库说明中标注了 Codex Desktop 的端到端参考运行时。仓库不附带模型或 API Key。
+
+### 9. AI Image Prompts Skill
+
+仓库：<https://github.com/YouMind-OpenLab/ai-image-prompts-skill>
+
+面向多个图像模型的 Prompt 推荐 Skill，依赖带示例图的社区图库。它适合找灵感和风格案例，但“支持所有模型”应理解为 Prompt 可迁移，而不是每条 Prompt 在每个平台都能得到相同结果；建议作为检索型补充，而不是质量保证层。
 
 提示：很多 GPT Image 2.5 Prompt 库是在 2.5 发布前收集的，应当把它们当作可改写的案例，而不是保证能复现的官方模板。
 
